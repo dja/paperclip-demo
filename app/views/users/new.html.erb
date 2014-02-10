@@ -1,0 +1,10 @@
+<h1>Welcome to MereUniCaticorn</h1>
+
+<%= form_for @user do |u| %>
+	<%= u.file_field :image %>
+	Name: <%= u.text_field :name, placeholder: 'name' %>
+	Email: <%= u.text_field :email, placeholder: 'email' %>
+	Password: <%= u.text_field :password, placeholder: 'password' %>
+
+	<%= u.submit %>
+<% end %>
